@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    color: #333;
+    background: #f5f6fa;
+}
+
+.navbar{
+    background-color: #4f46e5;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+  
+  .navbar .ui-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  
+  .layout {
+    display: flex;
+  }
+  
+ 
+  .sidebar {
+    width: 220px;
+    background-color: #1f2937;
+    color: #fff;
+    height: calc(100vh - 64px);
+    padding: 1rem;
+    position: sticky;
+    top: 64px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar ul li {
+    margin: 1rem 0;
+  }
+  
+  .sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+ 
+  .content {
+    flex: 1;
+    padding: 2rem;
+  }
+  
+  .html-code {
+    background-color: #f5f5f5;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: monospace;
+    position: relative;
+    margin-top: 1rem;
+  }
+
+  .html-code pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  .copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .copy-btn:hover {
+    background-color: #3730a3;
+  }
+
+  .css-code {
+    background-color: #f5f5f5;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: monospace;
+    position: relative;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+  
+  .css-code pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  
+  .copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .copy-btn:hover {
+    background-color: #3730a3;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .layout {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  }
+  
+

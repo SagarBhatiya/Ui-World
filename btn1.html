@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="btn1.css" />
+    <title>UIWorld - Build Beautiful Interfaces</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="ui-name">UIWorld</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="component.html">All</a></li>
+          <li><a href="button.html">Buttons</a></li>
+          <li><a href="form.html">Forms</a></li>
+          <li><a href="loader.html">Loaders</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main content -->
+      <main class="content">
+        <h1>HTML</h1>
+        <div class="html-code">
+          <button class="copy-btn" onclick="copyCode()">Copy</button>
+          <pre><code id="codeBlock">
+          &lt;button class="button"&gt;
+            &lt;svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"&gt;
+              &lt;path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"&gt;&lt;/path&gt;
+            &lt;/svg&gt;
+            Explore
+          &lt;/button&gt;
+            </code></pre>
+        </div>
+        <h1>CSS</h1>
+        <div class="css-code">
+          <button class="copy-btn" onclick="copyCSS()">Copy</button>
+          <pre><code id="cssBlock">
+
+.button {
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  background-color: rgb(161, 255, 20);
+  border-radius: 30px;
+  color: rgb(19, 19, 19);
+  font-weight: 600;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: .2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 8px;
+  transition-duration: .5s;
+}
+
+.svgIcon {
+  height: 25px;
+  transition-duration: 1.5s;
+}
+
+.bell path {
+  fill: rgb(19, 19, 19);
+}
+
+.button:hover {
+  background-color: rgb(192, 255, 20);
+  transition-duration: .5s;
+}
+
+.button:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
+}
+
+.button:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
+}
+  </code></pre>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
