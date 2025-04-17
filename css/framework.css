@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --primary: #1d4ed8;
+    --secondary: #64748b;
+    --gray-light: #f1f5f9;
+    --gray-dark: #1e293b;
+    --text: #0f172a;
+  
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 16px;
+    --space-4: 24px;
+  
+    --font-base: 16px;
+    --font-lg: 20px;
+    --font-xl: 24px;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+  }
+  
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  
+  /* Responsive Breakpoints */
+  @media (max-width: 768px) {
+    .col-md-12 {
+      width: 100%;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+  }
+  
+  /* font ke lye ui liberary */
+  /* space and margin  */
+  /* Margin */
+  .m-0 {
+    margin: 0;
+  }
+  .m-1 {
+    margin: 4px;
+  }
+  .m-2 {
+    margin: 8px;
+  }
+  .m-3 {
+    margin: 16px;
+  }
+  .m-4 {
+    margin: 24px;
+  }
+  
+  .mt-1 {
+    margin-top: 4px;
+  }
+  .mb-1 {
+    margin-bottom: 4px;
+  }
+  .ml-1 {
+    margin-left: 4px;
+  }
+  .mr-1 {
+    margin-right: 4px;
+  }
+  
+  /* Padding */
+  .p-0 {
+    padding: 0;
+  }
+  .p-1 {
+    padding: 4px;
+  }
+  .p-2 {
+    padding: 8px;
+  }
+  .p-3 {
+    padding: 16px;
+  }
+  .p-4 {
+    padding: 24px;
+  }
+  
+  .pt-1 {
+    padding-top: 4px;
+  }
+  .pb-1 {
+    padding-bottom: 4px;
+  }
+  .pl-1 {
+    padding-left: 4px;
+  }
+  .pr-1 {
+    padding-right: 4px;
+  }
+  
+  /* font size le lye  */
+  /* Font Sizes */
+  .text-xs {
+    font-size: 12px;
+  }
+  .text-sm {
+    font-size: 14px;
+  }
+  .text-base {
+    font-size: 16px;
+  }
+  .text-lg {
+    font-size: 20px;
+  }
+  .text-xl {
+    font-size: 24px;
+  }
+  .text-2xl {
+    font-size: 30px;
+  }
+  
+  /* Font Weight */
+  .font-thin {
+    font-weight: 100;
+  }
+  .font-light {
+    font-weight: 300;
+  }
+  .font-normal {
+    font-weight: 400;
+  }
+  .font-bold {
+    font-weight: 700;
+  }
+  .font-black {
+    font-weight: 900;
+  }
+  
+  /* Text Alignment */
+  .text-left {
+    text-align: left;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .text-justify {
+    text-align: justify;
+  }
+  
+  /* Text Color (using CSS variables) */
+  .text-primary {
+    color: var(--primary);
+  }
+  .text-secondary {
+    color: var(--secondary);
+  }
+  .text-white {
+    color: white;
+  }
+  .text-dark {
+    color: var(--text);
+  }
+  
+  /* layouts ke lye  */
+  .flex {
+    display: flex;
+  }
+  .inline-flex {
+    display: inline-flex;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .justify-start {
+    justify-content: flex-start;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-around {
+    justify-content: space-around;
+  }
+  
+  .items-start {
+    align-items: flex-start;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
+  }
+  .items-stretch {
+    align-items: stretch;
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .flex-nowrap {
+    flex-wrap: nowrap;
+  }
+  
+  .gap-1 {
+    gap: 4px;
+  }
+  .gap-2 {
+    gap: 8px;
+  }
+  .gap-3 {
+    gap: 16px;
+  }
+  
+  /* for alignment */
+  .text-left {
+    text-align: left;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-right {
+    text-align: right;
+  }
+  
+  .align-top {
+    vertical-align: top;
+  }
+  .align-middle {
+    vertical-align: middle;
+  }
+  .align-bottom {
+    vertical-align: bottom;
+  }
+  
+  .block {
+    display: block;
+  }
+  .inline {
+    display: inline;
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  

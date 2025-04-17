@@ -75,6 +75,45 @@ html, body{
     padding: 2rem;
   }
   
+  .html-code {
+    background-color: #f5f5f5;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: monospace;
+    position: relative;
+    margin-top: 1rem;
+  }
+
+  .html-code pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  
+
+  .css-code {
+    background-color: #f5f5f5;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: monospace;
+    position: relative;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+  
+  .css-code pre {
+    margin: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  
+ 
+  
   /* Responsive */
   @media (max-width: 768px) {
     .layout {
